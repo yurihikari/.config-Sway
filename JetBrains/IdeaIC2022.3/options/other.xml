@@ -1,0 +1,32 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Fira Sans" />
+    <option name="fontScale" value="1.0" />
+    <option name="fontSize" value="13.0" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "MarketplacePluginsSearchHistory": "Catppuccin\nCat\nC\nspigot\ns",
+    "NextRunPlatformUpdateBuild": "IC-223.8836.41",
+    "NextRunPlatformUpdateVersion": "2022.3.3",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "bundled.plugins.list.saved.version": "IC-223.8836.35",
+    "eclipse.projects.detected": "",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "12.0",
+    "fontSizeToResetEditor": "12.0",
+    "previousColorScheme": "_@user_Catppuccin Macchiato",
+    "tasks.pass.word.conversion.enforced": "true"
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.demonwav.mcdev.nbt.filetype.NbtFileTypeDetector",
+      "com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector",
+      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>
