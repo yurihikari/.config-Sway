@@ -51,15 +51,16 @@ nord15 #b48ead
     font-size: 15px;
     margin-right: 5px;
     margin-left: 5px;
-    padding-bottom:4px;
-    padding-top: 4px;
+    /* padding-bottom:4px;
+    padding-top: 4px; */
 }
 
 window#waybar {
     /* background:#2d2a2e; */
-    /* background-color: rgba(36, 39, 58, 1); */
-    background-color: rgba(0, 0, 0, 0.1);
-    /* border-bottom: 2px solid @lavender; */
+    /* background-color: rgba(36, 39, 58, 0.85); */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: @base;
+    padding-bottom: 1px;
 }
 
 #workspaces button {
@@ -104,29 +105,29 @@ window#waybar {
 
 #backlight {
     color: @yellow;
-    border-bottom: 1px solid @yellow;
+    border-bottom: 2px solid @yellow;
 }
 
 #battery {
     color: #d8dee9;
-    border-bottom: 1px solid #d8dee9;
+    border-bottom: 2px solid #d8dee9;
 }
 
 #battery.charging {
     color: #81a1c1;
-    border-bottom: 1px solid #81a1c1;
+    border-bottom: 2px solid #81a1c1;
 }
 
 @keyframes blink {
     to {
         color: @red;
-        border-bottom: 1px solid @red;
+        border-bottom: 2px solid @red;
     }
 }
 
 #battery.critical:not(.charging) {
     color: #bf616a;
-    border-bottom: 1px solid #bf616a;
+    border-bottom: 2px solid #bf616a;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -136,7 +137,7 @@ window#waybar {
 
 #cpu {
     color:#a3be8c ;
-    border-bottom: 1px solid #a3be8c;
+    border-bottom: 2px solid #a3be8c;
 }
 
 #memory {
@@ -146,37 +147,37 @@ window#waybar {
 
 #network.disabled {
     color: #bf616a;
-    border-bottom: 1px solid #bf616a;
+    border-bottom: 2px solid #bf616a;
 }
 
 #network{
     color: @green;
-    border-bottom: 1px solid @green;
+    border-bottom: 2px solid @green;
 }
 
 #network.disconnected {
     color: #bf616a;
-    border-bottom: 1px solid #bf616a;
+    border-bottom: 2px solid #bf616a;
 }
 
 #pulseaudio {
     color: @flamingo;
-    border-bottom: 1px solid @flamingo;
+    border-bottom: 2px solid @flamingo;
 }
 
 #pulseaudio.muted {
     color: #3b4252;
-    border-bottom: 1px solid #3b4252;
+    border-bottom: 2px solid #3b4252;
 }
 
 #temperature {
     color: @teal;
-    border-bottom: 1px solid @teal;
+    border-bottom: 2px solid @teal;
 }
 
 #temperature.critical {
     color: @red;
-    border-bottom: 1px solid @red;
+    border-bottom: 2px solid @red;
 }
 
 #idle_inhibitor {
@@ -207,7 +208,7 @@ window#waybar {
 
 #custom-keyboard-layout{
    color: @peach;
-    border-bottom: 1px solid @peach;
+    border-bottom: 2px solid @peach;
 }   
 
 

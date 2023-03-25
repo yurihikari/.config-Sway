@@ -25,7 +25,7 @@ for_window [shell="x_wayland"] title_format "%class - %title"
 
 # Set gaps for windows with rounded corners
 for_window [class="^.*"] border pixel 2
-for_window [class="^.*"] border_radius 30
+for_window [class="^.*"] border radius 30
 
 set $opacity 1
 
@@ -35,11 +35,18 @@ for_window [app_id=".*"] opacity $opacity
 
 ## Window decoration
 # class                 border  backgr. text    indicator child_border
-client.focused           $lavender     $base $text  $rosewater $lavender
-client.focused_inactive  $lavender        $base $text  $rosewater $lavender
-client.unfocused         $mauve        $base $text  $rosewater $mauve
+# client.focused           $lavender     $base $text  $rosewater $lavender
+# client.focused_inactive  $lavender        $base $text  $rosewater $lavender
+# client.unfocused         $mauve        $base $text  $rosewater $mauve
+# client.urgent            $peach        $base $peach $overlay0  $peach
+# client.placeholder       $base     $base $text  $overlay0  $overlay0
+# client.background        $base
+
+client.focused           $base     $base $text  $base $base
+client.focused_inactive  $base       $base $text  $base $base
+client.unfocused         $base        $base $text  $base $base
 client.urgent            $peach        $base $peach $overlay0  $peach
-client.placeholder       $base     $base $text  $overlay0  $overlay0
+client.placeholder       $base     $base $text  $overlay0  $base
 client.background        $base
 
 #
