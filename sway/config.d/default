@@ -35,6 +35,13 @@ exec swayidle -w\
 ## Lock Screen
  bindsym $mod+f1 exec ~/.config/sway/scripts/lockman.sh
 
+# Rotate output clockwise
+bindsym $mod+F9 output eDP-1 transform 0
+bindsym $mod+Ctrl+F9 output eDP-1 transform 90
+# Rotate output anticlockwise
+bindsym $mod+Shift+F9 output eDP-1 transform 180
+
+
 ### Key bindings
 #
 # Basics:
@@ -50,7 +57,7 @@ exec swayidle -w\
 
     # Start your launcher
     # bindsym $mod+d exec $menu
-    bindsym $mod+d exec rofi -show drun
+    bindsym $mod+d exec $menu
     # Launcher
     bindsym $mod+Shift+d exec $launcher
 
@@ -219,9 +226,9 @@ bindsym XF86AudioMute exec pamixer --toggle-mute && ( pamixer --get-mute && echo
 #
 # App shortcuts
 #
-    # bindsym $mod+n exec thunar
-    bindsym $mod+n exec ranger
-    bindsym $mod+o exec firedragon
+    # bindsym $mod+n exec thunars
+    bindsym $mod+n exec nnn
+    bindsym $mod+o exec google-chrome-stable
 #
 # Screenshots
 #

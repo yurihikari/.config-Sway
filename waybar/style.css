@@ -46,8 +46,8 @@ nord15 #b48ead
     border: 0;
     border-radius: 0;
     padding: 0 0;
-    font-family:UbuntuMono;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-family:UbuntuMono; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     margin-right: 5px;
     margin-left: 5px;
@@ -57,8 +57,9 @@ nord15 #b48ead
 
 window#waybar {
     /* background:#2d2a2e; */
-    /* background-color: shade(@base, 1.5); */
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(36, 39, 58, 1); */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border-bottom: 2px solid @lavender; */
 }
 
 #workspaces button {
@@ -72,9 +73,9 @@ window#waybar {
 
 #workspaces {
     padding: 8px 1rem;
-    border-style: solid;
+    /* border-style: solid;
     background-color: shade(@base, 1.4);
-    border-radius: 25px;
+    border-radius: 15px; */
 }
 
 #workspaces button.focused {
@@ -86,10 +87,10 @@ window#waybar {
 }
 
 #clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #custom-launcher,#custom-power,#custom-pacman {
-    padding: 8px 1rem;
+    padding: 8px 0.5rem;
     border-style: solid;
-    background-color: shade(@base, 0.9);
-    border-radius: 35px;
+    /* background-color: shade(@base, 0.9); */
+    /* border-radius: 15px; */
 }
 /* -----------------------------------------------------------------------------
  * Module styles
@@ -97,31 +98,35 @@ window#waybar {
 
  
 #clock {
- color:#a3be8c;
+ /* background-color:#a3be8c; */
+ color: @lavender;
 }
 
 #backlight {
-    color: #ebcb8b;
+    color: @yellow;
+    border-bottom: 1px solid @yellow;
 }
 
 #battery {
     color: #d8dee9;
+    border-bottom: 1px solid #d8dee9;
 }
 
 #battery.charging {
     color: #81a1c1;
+    border-bottom: 1px solid #81a1c1;
 }
 
 @keyframes blink {
     to {
-        color: #4c566a;
-        background-color: #eceff4;
+        color: @red;
+        border-bottom: 1px solid @red;
     }
 }
 
 #battery.critical:not(.charging) {
-    background: #bf616a;
-    color: #eceff4;
+    color: #bf616a;
+    border-bottom: 1px solid #bf616a;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -131,66 +136,78 @@ window#waybar {
 
 #cpu {
     color:#a3be8c ;
+    border-bottom: 1px solid #a3be8c;
 }
 
 #memory {
-    color: #d3869b;
+    background-color: #d3869b;
+    color: @base;
 }
 
 #network.disabled {
-    color:#bf616a;
+    color: #bf616a;
+    border-bottom: 1px solid #bf616a;
 }
 
 #network{
-    color:#a3be8c;
+    color: @green;
+    border-bottom: 1px solid @green;
 }
 
 #network.disconnected {
     color: #bf616a;
+    border-bottom: 1px solid #bf616a;
 }
 
 #pulseaudio {
-    color: #b48ead;
+    color: @flamingo;
+    border-bottom: 1px solid @flamingo;
 }
 
 #pulseaudio.muted {
     color: #3b4252;
+    border-bottom: 1px solid #3b4252;
 }
 
 #temperature {
-    color: #8fbcbb;
+    color: @teal;
+    border-bottom: 1px solid @teal;
 }
 
 #temperature.critical {
-    color: #bf616a;
+    color: @red;
+    border-bottom: 1px solid @red;
 }
 
 #idle_inhibitor {
-   color: #ebcb8b;
+   background-color: #ebcb8b;
+   color: @base;
 }
 
 #tray {
+    /* background-color: @base; */
 }
 
 #custom-launcher,#custom-power{
     border-style: hidden;
-    margin-top:2px;    
+    color: @lavender;
+}
+
+#custom-power {
 }
 
 #window{
     border-style: hidden;
-    margin-top:1px;  
-    padding: 8px 1rem;
-    border-style: solid;
-    background-color: shade(@base, 1.4);
-    border-radius: 35px;
+    /* margin-top:1px;  
+    padding: 8px 1rem; */
 }    
 #mode{
     margin-bottom:3px;
 }
 
 #custom-keyboard-layout{
-   color:#d08770;
+   color: @peach;
+    border-bottom: 1px solid @peach;
 }   
 
 

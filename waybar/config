@@ -5,7 +5,8 @@
     //"width": 1350, // Waybar width
     // Choose the order of the modules idle_inhibitor
     "modules-left": ["custom/launcher","sway/workspaces", "sway/mode", "sway/window"],
-    "modules-right": ["backlight", "custom/keyboard-layout", "temperature", "battery", "network", "pulseaudio","tray", "clock", "custom/power"], 
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "custom/keyboard-layout", "temperature", "battery", "network", "pulseaudio","tray", "custom/power"], 
     
  // Modules configuration
  
